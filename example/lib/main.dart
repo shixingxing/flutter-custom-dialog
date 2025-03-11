@@ -234,7 +234,7 @@ showAlertDialog(BuildContext context) {
 }
 
 showDevelopDialog(BuildContext context) {
-  YYDialog yyDialog;
+  YYDialog? yyDialog;
 
   return Padding(
     padding: EdgeInsets.all(8.0),
@@ -280,8 +280,7 @@ Widget makeTextButton(title, Function() function) {
   return SizedBox(
     width: 65.0,
     height: 35.0,
-    child: RaisedButton(
-      padding: EdgeInsets.all(0.0),
+    child: TextButton(
       onPressed: () {
         function();
       },
